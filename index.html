@@ -1,1 +1,1029 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#090604">
 
+<title>TEAM EKADANTAYA | గణేశ ఆగమనం 2026</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Sans Telugu","Nirmala UI","Segoe UI",sans-serif;
+    color:#fff4d6;
+    line-height:1.6;
+    overflow-x:hidden;
+
+    /* YOUR BACKGROUND IMAGE */
+    background:
+        linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.55)),
+        url("1000030268.png") center top / cover fixed no-repeat;
+}
+
+/* Dark overlay */
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-2;
+
+    background:
+        radial-gradient(circle at 50% 20%,
+        rgba(255,159,25,.12),
+        transparent 38%),
+        radial-gradient(circle at 50% 80%,
+        rgba(125,35,10,.18),
+        transparent 40%);
+}
+
+/* Container */
+.container{
+    width:min(94%,760px);
+    margin:auto;
+}
+
+/* Navigation */
+nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+
+    background:rgba(7,4,2,.88);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,190,65,.35);
+}
+
+.navin{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 4px;
+}
+
+.brand{
+    font-weight:900;
+    letter-spacing:1px;
+    color:#ffd36b;
+    font-size:15px;
+}
+
+.navlinks{
+    display:flex;
+    gap:10px;
+}
+
+.navlinks a{
+    color:#ffe8b0;
+    text-decoration:none;
+    font-size:12px;
+    padding:7px 9px;
+    border-radius:20px;
+}
+
+.navlinks a:hover{
+    background:#2a1707;
+}
+
+/* Hero */
+.hero{
+    padding:34px 0 22px;
+    text-align:center;
+}
+
+.om{
+    font-size:30px;
+    color:#ffc44e;
+}
+
+.kicker{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#dca64b;
+    margin-top:3px;
+    font-weight:700;
+}
+
+h1{
+    font-size:clamp(30px,8vw,58px);
+    line-height:1.05;
+    margin:8px 0;
+    color:#ffd86e;
+    text-shadow:0 3px 18px #7c3900;
+    font-weight:1000;
+}
+
+.subtitle{
+    font-size:clamp(17px,4.5vw,25px);
+    color:#fff0c7;
+    font-weight:700;
+}
+
+/* Existing / main card */
+.hero-card{
+    margin:22px auto 0;
+    max-width:560px;
+    padding:9px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(135deg,#5d2b08,#e7a934,#4b2108);
+
+    box-shadow:
+        0 0 35px rgba(255,160,30,.25);
+}
+
+.hero-card img{
+    display:block;
+    width:100%;
+    border-radius:18px;
+}
+
+/* Aagman poster */
+.aagman-poster{
+    margin:24px auto 0;
+    max-width:560px;
+    padding:9px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(135deg,#5d2b08,#e7a934,#4b2108);
+
+    box-shadow:
+        0 0 40px rgba(255,160,30,.25);
+}
+
+.aagman-poster img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:18px;
+}
+
+/* Invitation */
+.invite{
+    text-align:center;
+    margin:22px auto 30px;
+    padding:22px 18px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,196,78,.35);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(57,27,8,.82),
+            rgba(20,9,4,.92)
+        );
+}
+
+.invite strong{
+    display:block;
+    color:#ffd36b;
+    font-size:25px;
+    margin-bottom:7px;
+}
+
+.invite p{
+    font-size:16px;
+    color:#ffeac0;
+}
+
+/* Committee */
+.committee{
+    text-align:center;
+    margin:18px auto 30px;
+    padding:26px 16px;
+
+    border-radius:22px;
+
+    border:2px solid rgba(255,196,78,.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(57,27,8,.92),
+            rgba(20,9,4,.96)
+        );
+
+    box-shadow:
+        0 0 28px rgba(255,160,30,.16);
+}
+
+.committee .small{
+    font-size:clamp(18px,5vw,28px);
+    font-weight:900;
+    color:#fff0c7;
+    letter-spacing:1px;
+}
+
+.committee .big{
+    display:block;
+    font-size:clamp(30px,8vw,52px);
+    line-height:1.05;
+
+    color:#ffd36b;
+
+    text-shadow:0 3px 18px #7c3900;
+
+    font-weight:1000;
+    margin:5px 0;
+}
+
+.committee .members{
+    font-size:clamp(20px,5.5vw,32px);
+    font-weight:900;
+    color:#ffe8b0;
+    letter-spacing:1px;
+}
+
+/* Sections */
+section{
+    padding:20px 0 38px;
+}
+
+.section-title{
+    text-align:center;
+    color:#ffd36b;
+    font-size:25px;
+    margin-bottom:16px;
+}
+
+/* Details grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.card{
+    background:
+        linear-gradient(
+            145deg,
+            rgba(57,28,9,.90),
+            rgba(17,8,4,.95)
+        );
+
+    border:1px solid rgba(255,188,55,.25);
+    border-radius:18px;
+
+    padding:17px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.25);
+}
+
+.card .icon{
+    font-size:25px;
+}
+
+.card h3{
+    font-size:15px;
+    color:#ffd46e;
+    margin:4px 0;
+}
+
+.card p{
+    font-size:14px;
+    color:#f6dfb0;
+}
+
+/* Countdown */
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+}
+
+.timebox{
+    text-align:center;
+    padding:15px 5px;
+
+    border-radius:16px;
+
+    background:#160a04;
+    border:1px solid #6c3b0e;
+}
+
+.timebox b{
+    display:block;
+    font-size:28px;
+    color:#ffd05b;
+}
+
+.timebox span{
+    font-size:11px;
+    color:#d7b77d;
+}
+
+/* Buttons */
+.actions{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.btn{
+    border:0;
+    border-radius:15px;
+
+    padding:13px 8px;
+
+    font-weight:800;
+    font-family:inherit;
+
+    cursor:pointer;
+    text-decoration:none;
+    text-align:center;
+
+    color:#170900;
+
+    background:
+        linear-gradient(135deg,#ffd86e,#c88319);
+}
+
+.btn.secondary{
+    color:#ffe8b0;
+    background:#211006;
+    border:1px solid #70400f;
+}
+
+/* Map */
+.map{
+    width:100%;
+    height:180px;
+    border:0;
+    border-radius:18px;
+    opacity:.92;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:28px 10px 40px;
+    color:#b9945c;
+    font-size:12px;
+}
+
+/* Falling flowers */
+.flower{
+    position:fixed;
+    top:-30px;
+
+    font-size:17px;
+    opacity:.8;
+
+    pointer-events:none;
+    z-index:100;
+
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+
+        opacity:0;
+    }
+}
+
+/* Lamp */
+.lamp{
+    position:fixed;
+    bottom:12px;
+    left:12px;
+
+    font-size:23px;
+
+    filter:
+        drop-shadow(0 0 8px #ffb52e);
+
+    opacity:.85;
+
+    z-index:20;
+}
+
+/* Mobile */
+@media(max-width:430px){
+
+    .navlinks a{
+        font-size:10px;
+        padding:6px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .actions{
+        grid-template-columns:1fr;
+    }
+
+    .countdown{
+        gap:5px;
+    }
+
+    .timebox b{
+        font-size:23px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="lamp">🪔</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="container navin">
+
+<div class="brand">
+🕉️ TEAM EKADANTAYA
+</div>
+
+<div class="navlinks">
+
+<a href="#home">Home</a>
+<a href="#details">Details</a>
+<a href="#share">Share</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- MAIN -->
+
+<main id="home" class="container">
+
+<div class="hero">
+
+<div class="om">🕉️</div>
+
+<div class="kicker">
+TEAM EKADANTAYA
+</div>
+
+<h1>
+గణేశ ఆగమనం 2026
+</h1>
+
+<div class="subtitle">
+🙏 అందరికీ ఆహ్వానం 🙏
+</div>
+
+
+<!-- YOUR NEW AAGMAN POSTER -->
+
+<div class="aagman-poster">
+
+<img
+src="aagman-poster.png"
+alt="Grand Aagman 2026"
+>
+
+</div>
+
+
+<!-- INVITATION -->
+
+<div class="invite">
+
+<strong>
+🙏 ప్రత్యేక ఆహ్వానం 🙏
+</strong>
+
+<p>
+విఘ్నేశ్వరుని పవిత్ర ఆగమన వేడుకకు<br>
+మీరు, మీ కుటుంబ సభ్యులు అందరూ<br>
+సాదరంగా ఆహ్వానితులే.
+</p>
+
+</div>
+
+
+<!-- COMMITTEE -->
+
+<section class="committee">
+
+<div class="small">
+INVITED BY
+</div>
+
+<span class="big">
+TEAM EKADANTAYA
+</span>
+
+<div class="members">
+COMMITTEE MEMBERS
+</div>
+
+</section>
+
+</div>
+
+
+<!-- DETAILS -->
+
+<section id="details">
+
+<h2 class="section-title">
+📅 కార్యక్రమ వివరాలు
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">📅</div>
+
+<h3>
+తేదీ
+</h3>
+
+<p>
+12 సెప్టెంబర్ 2026
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⏰</div>
+
+<h3>
+సమయం
+</h3>
+
+<p>
+సాయంత్రం 6:00 గంటలకు
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📍</div>
+
+<h3>
+ప్రదేశం
+</h3>
+
+<p>
+ప్యాదిండి,<br>
+సి.కె. పల్లి మండలం,<br>
+ఆంధ్రప్రదేశ్
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🕉️</div>
+
+<h3>
+ఆయోజకులు
+</h3>
+
+<p>
+TEAM EKADANTAYA
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section>
+
+<h2 class="section-title">
+⏳ ఆగమనానికి కౌంట్‌డౌన్
+</h2>
+
+<div class="countdown">
+
+<div class="timebox">
+
+<b id="days">0</b>
+<span>రోజులు</span>
+
+</div>
+
+
+<div class="timebox">
+
+<b id="hours">0</b>
+<span>గంటలు</span>
+
+</div>
+
+
+<div class="timebox">
+
+<b id="mins">0</b>
+<span>నిమిషాలు</span>
+
+</div>
+
+
+<div class="timebox">
+
+<b id="secs">0</b>
+<span>సెకన్లు</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SHARE -->
+
+<section id="share">
+
+<h2 class="section-title">
+📲 ఆహ్వానాన్ని షేర్ చేయండి
+</h2>
+
+<div class="actions">
+
+<button
+class="btn"
+onclick="shareWhatsApp()">
+💬 WhatsApp
+</button>
+
+
+<button
+class="btn secondary"
+onclick="copyLink()">
+🔗 Copy Link
+</button>
+
+
+<button
+class="btn secondary"
+onclick="toggleMusic()">
+
+🎵 Music
+<span id="musicState">OFF</span>
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- MAP -->
+
+<section>
+
+<h2 class="section-title">
+🗺️ ప్రదేశం
+</h2>
+
+<div class="card" style="padding:10px">
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=Pyadindi,+Andhra+Pradesh&output=embed"
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+<a
+class="btn"
+style="display:block;margin-top:10px"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Pyadindi%2C%20Andhra%20Pradesh">
+
+📍 Google Mapsలో తెరవండి
+
+</a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+🕉️ TEAM EKADANTAYA
+<br>
+
+🙏 గణేశ ఆగమనం 2026 🙏
+
+<br><br>
+
+అందరూ ఆహ్వానితులే • శుభం భూయాత్
+
+</footer>
+
+
+<script>
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+const eventTime =
+new Date("2026-09-12T18:00:00+05:30").getTime();
+
+
+function updateCountdown(){
+
+let diff =
+eventTime - Date.now();
+
+if(diff < 0){
+    diff = 0;
+}
+
+const d =
+Math.floor(diff / 86400000);
+
+const h =
+Math.floor(
+    (diff % 86400000) / 3600000
+);
+
+const m =
+Math.floor(
+    (diff % 3600000) / 60000
+);
+
+const s =
+Math.floor(
+    (diff % 60000) / 1000
+);
+
+
+document.getElementById("days")
+.textContent = d;
+
+document.getElementById("hours")
+.textContent = h;
+
+document.getElementById("mins")
+.textContent = m;
+
+document.getElementById("secs")
+.textContent = s;
+
+}
+
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+
+
+/* =========================
+   WHATSAPP SHARE
+========================= */
+
+function shareWhatsApp(){
+
+const text =
+"🙏 TEAM EKADANTAYA — గణేశ ఆగమనం 2026 🙏\n\n" +
+
+"📅 12 సెప్టెంబర్ 2026\n" +
+
+"⏰ సాయంత్రం 6:00 గంటలకు\n" +
+
+"📍 ప్యాదిండి, సి.కె. పల్లి మండలం, ఆంధ్రప్రదేశ్";
+
+
+const url =
+location.href;
+
+
+window.open(
+"https://wa.me/?text=" +
+encodeURIComponent(text + "\n\n" + url),
+"_blank"
+);
+
+}
+
+
+
+/* =========================
+   COPY LINK
+========================= */
+
+async function copyLink(){
+
+try{
+
+await navigator.clipboard
+.writeText(location.href);
+
+alert("లింక్ కాపీ అయింది!");
+
+}
+
+catch(e){
+
+alert("లింక్ కాపీ చేయలేకపోయాం.");
+
+}
+
+}
+
+
+
+/* =========================
+   MUSIC
+========================= */
+
+let audioCtx = null;
+
+let musicTimer = null;
+
+let musicOn = false;
+
+
+function bell(){
+
+if(!audioCtx){
+
+audioCtx =
+new (
+window.AudioContext ||
+window.webkitAudioContext
+)();
+
+}
+
+
+const o =
+audioCtx.createOscillator();
+
+const g =
+audioCtx.createGain();
+
+
+o.type = "sine";
+
+o.frequency.value = 523.25;
+
+
+g.gain.setValueAtTime(
+0.0001,
+audioCtx.currentTime
+);
+
+g.gain.exponentialRampToValueAtTime(
+0.08,
+audioCtx.currentTime + 0.02
+);
+
+g.gain.exponentialRampToValueAtTime(
+0.0001,
+audioCtx.currentTime + 1.3
+);
+
+
+o.connect(g);
+
+g.connect(audioCtx.destination);
+
+o.start();
+
+o.stop(
+audioCtx.currentTime + 1.35
+);
+
+}
+
+
+function toggleMusic(){
+
+musicOn = !musicOn;
+
+
+document.getElementById(
+"musicState"
+).textContent =
+musicOn ? "ON" : "OFF";
+
+
+if(musicOn){
+
+bell();
+
+musicTimer =
+setInterval(
+bell,
+3500
+);
+
+}
+
+else{
+
+clearInterval(musicTimer);
+
+}
+
+}
+
+
+
+/* =========================
+   FALLING FLOWERS
+========================= */
+
+function flowers(){
+
+const f =
+document.createElement("div");
+
+f.className =
+"flower";
+
+
+f.textContent =
+[
+"🌼",
+"🌸",
+"✨",
+"🌺",
+"🌹"
+][
+Math.floor(
+Math.random() * 5
+)
+];
+
+
+f.style.left =
+Math.random() * 100 + "vw";
+
+
+f.style.animationDuration =
+(5 + Math.random() * 5) + "s";
+
+
+document.body.appendChild(f);
+
+
+setTimeout(
+() => f.remove(),
+10000
+);
+
+}
+
+
+setInterval(
+flowers,
+1300
+);
+
+</script>
+
+</body>
+  </html>
